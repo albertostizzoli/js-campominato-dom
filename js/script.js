@@ -134,4 +134,23 @@ function createAlertMessage(count, square_save){
 }
 
 // creo una funzione per rivelare le celle bomba
+function revealBombs(totalBombs){
+    for(let i = 0; i < totalBombs.length; i++){
+        totalBombs[i].classList.add('checked-bomb');
+        totalBombs[i].innerHTML = `<i class="fa-solid fa-bomb fa-shake"></i>`;
+    }
+}
+
+// Variabili
+
+let container = document.querySelector('.container');
+let button = document.getElementById('play');
+let difficulty = document.getElementById('difficulty');
+let box_message = document.getElementById('box-message');
+
+//Bottone
+button.addEventListener('click', function(){
+
+    createNewGame();
+});
 
