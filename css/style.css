@@ -44,6 +44,7 @@ select{
     background-color: black;
     color: white;
     border-radius: 10px;
+    border: 1px solid white;
 }
 
 main {
@@ -52,7 +53,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 94, 255);
+    background-color: rgb(16, 128, 248);
 }
 
 .container {
@@ -101,7 +102,7 @@ main {
 }
 
 .checked {
-    background-color: rgb(0, 94, 255);
+    background-color: rgb(0, 166, 255);
 }
 
 .checked-bomb {
