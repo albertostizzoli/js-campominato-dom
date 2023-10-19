@@ -118,4 +118,20 @@ function generateSquare(num, cellsRow, arrayBombs){
 }
 
 // creo una funzione per dare il messaggio di vittoria o sconfitta
+function createAlertMessage(count, square_save){
+    let box_message = document.getElementById('box-message');
+    box_message.style.display = 'block';
+    const box = document.createElement('span');
+    box.classList.add('btn-close');
+    box.innerText = 'X';
+    if(count < square_save){
+        box_message.innerHTML = `Hai perso! Hai totalizzato ${count} punti`;
+    } else{
+        box_message.innerHTML = `Hai vinto! Hai totalizzato ${count} punti`;
+        box_message.style.backgroundColor = 'green';
+    }
+    return box;
+}
+
+// creo una funzione per rivelare le celle bomba
 
