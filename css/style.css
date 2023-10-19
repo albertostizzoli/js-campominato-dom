@@ -43,6 +43,7 @@ header {
 select{
     background-color: black;
     color: white;
+    border-radius: 10px;
 }
 
 main {
@@ -51,6 +52,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(0, 94, 255);
 }
 
 .container {
@@ -91,7 +93,7 @@ main {
 
 .square {
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid black;
     cursor: pointer;
     display: flex;
     align-items: center;
