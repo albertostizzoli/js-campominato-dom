@@ -95,3 +95,27 @@ function createBombsArray(min, max){
     return arrayBombs;
 }
 
+// creo una funzione per fare il singolo quadrato
+function generateSquare(num, cellsRow, arrayBombs){
+    const element = document.createElement('div');
+    element.classList.add('square');
+
+    //calcolo dinamico in base al numero di celle
+    let square_length = `calc(100% / ${cellsRow})`;
+
+    //assegno al singolo quadrato una dimensione in base al numero di celle per riga
+    element.style.width = square_length;
+    element.style.height = square_length;
+    element.innerText = num;
+
+    // assegno alla cella il nome mine se il numero è presente nell'array delle bombe
+    for(let i = 0; i< arrayBombs.length; i++){
+        if(element.innerText == arrayBombs[i]){
+            element.setAttribute('name', 'bomb');
+        }
+    }
+    return element;
+}
+
+// creo una funzione per dare il messaggio di vittoria o sconfitta
+

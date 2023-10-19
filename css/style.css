@@ -101,7 +101,7 @@ main {
 }
 
 .checked {
-    background-color: aqua;
+    background-color: rgb(0, 94, 255);
 }
 
 .checked-bomb {
