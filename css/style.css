@@ -29,6 +29,24 @@ header {
     border: 3px solid white;
 }
 
+#label-difficulty {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#difficulty {
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+select{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
 main {
     height: calc(100vh - 80px);
     width: 100%;
@@ -64,3 +82,10 @@ button{
     background-color: rgb(0, 187, 255);
 }
 
+.checked-bomb {
+    background-color: red;
+}
+
+.event-none {
+    pointer-events: none;
+}
