@@ -19,9 +19,6 @@ function createNewGame() {
     }
 
     arrayBombs = createBombsArray(1, cellsNumber);
-    //stampo in console log l'array in ordine crescente
-    console.log(arrayBombs.sort(function (a, b) { return a - b }));
-
     generateGrid(arrayBombs, cellsNumber, cellsRow);
 }
 
